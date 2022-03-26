@@ -1,20 +1,81 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
+  <ion-toolbar color="primary">
+    <ion-title color="tertiary">
+      PetBook
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button expand="block" routerLink="/report">See report</ion-button>
+    <ion-card  button routerLink="/post"> 
+      <ion-card-content >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA90t4QYG3IYoWKA6CjA-k--tRsSyQh9Gstw&usqp=CAU"
+          alt="">
+        <ion-card-subtitle><b>Marcos Mediano</b></ion-card-subtitle>
+        <h3>Cheto taking a nap</h3>
+      </ion-card-content>
+        <ion-row>
+          <ion-col size="2">
+
+          </ion-col>
+          <ion-col>
+            <ion-icon name="thumbs-up-outline"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="chatbox-outline"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="thumbs-down-outline"></ion-icon>
+          </ion-col>
+        </ion-row>
+
+    </ion-card>
+    
+    <ion-card button routerLink="/post" >
+      <ion-card-content >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA90t4QYG3IYoWKA6CjA-k--tRsSyQh9Gstw&usqp=CAU"
+          alt="">
+          <ion-card-subtitle><b>Marcos Mediano</b></ion-card-subtitle>
+          <h3>Cheto taking a nap</h3>
+          <br>
+        <ion-row>
+          <ion-col size="2"></ion-col>
+          <ion-col>
+            <ion-icon name="thumbs-up-outline"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="chatbox-outline"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="thumbs-down-outline"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card button routerLink="/post">
+      <ion-card-content>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA90t4QYG3IYoWKA6CjA-k--tRsSyQh9Gstw&usqp=CAU"
+          alt="">
+          <ion-card-subtitle><b>Marcos Mediano</b></ion-card-subtitle>
+          <h3>Cheto taking a nap</h3>
+          <br>
+        <ion-row>
+          <ion-col size="2"></ion-col>
+          <ion-col>
+            <ion-icon button name="thumbs-up-outline"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <ion-icon button name="chatbox-outline"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <ion-icon button name="thumbs-down-outline"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
   </div>
 </ion-content>

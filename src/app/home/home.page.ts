@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  text='hello';
+  b=true;
 
   constructor() {}
+  toggle(){
+    this.b=!this.b;
+  } 
 
 }
